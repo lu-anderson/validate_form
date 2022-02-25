@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Card from './components/Card';
-
 import Form from './components/Form';
+import logo from './logo-trybe.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -50,18 +50,19 @@ class App extends React.Component {
   render(){
     const { nome, email, btnDisable, skill, submittedForm } = this.state;
     return (
-      <main className="App">
+      <main>
+          <img src={logo} alt="Trybe Logo" width="150"/>
           <h1>Cartão de visita</h1>
-          <Form 
-            propNome={nome} 
+          <Form
+            propNome={nome}
             propEmail={email}
             propBtnDisable={btnDisable}
             propSkill={skill}
             propHandleChange={this.handleChange}
             propHandleSubmit={this.handleSubmit}
           />
-          <Card 
-            propNome={nome} 
+          <Card
+            propNome={nome}
             propEmail={email}
             propBtnDisable={btnDisable}
             propSkill={skill}

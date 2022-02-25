@@ -1,0 +1,34 @@
+.visitCard--card {
+  width: 420px;
+  height: 280px;
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #262626;
+  margin-top: 64px;
+}
+
+.visitCard--img {
+  max-width: 100%;
+  width: 100px;
+}
+
+.visitCard--data h2 {
+  color: var(--roxo-claro);
+}
+
+.visitCard--badge {
+  background-color: var(--verde-escuro);
+  border-radius: 12px;
+  padding: 4px 8px;
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+}
+
+.successStatus {
+  background-color: white;
+}
